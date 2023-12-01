@@ -1,2 +1,3 @@
 # pour éviter que les parties d'html n'intègrent le remote
 *.phtml
+.vscode
