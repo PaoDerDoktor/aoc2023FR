@@ -1,8 +1,8 @@
-# aoc2021FR
+# aoc2023FR
 
-Traduction française des énoncés de l'Advent of Code 2022
+Traduction française des énoncés de l'Advent of Code 2023
 
-Lien vers le site original : <https://adventofcode.com/2022>
+Lien vers le site original : <https://adventofcode.com/2023>
 
 Le script `compile.bat` compile les fichiers *markdown* en *HTML partiel (.phtml)*, c'est-à-dire en HTML sans balises body/head/html etc.
 
