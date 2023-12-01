@@ -1,0 +1,82 @@
+<!DOCTYPE html> 
+<html lang='fr'> 
+<head> 
+<meta charset='UTF-8'> 
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet"> 
+<link rel='stylesheet' type='text/css' href='../style/aocLike.css'> 
+<meta name='day' content="day1"> 
+</head> 
+<body> 
+<section id='translation_part_one'> 
+<h1 id="jour-1-trébuchet----">--- Jour 1 : Trébuchet ?! ---</h1>
+<p>Il y a quelque chose qui cloche avec la production globale de neige,
+et vous avez été choisi pour y jeter un coup d'oeil. Les elfes vous ont
+même donné une carte. Sur celle-ci, ils ont utilisé des étoiles pour
+marquer les cinquante endroits les plus susceptibles d'avoir des
+problèmes.</p>
+<p>Vous avez fait ça assez souvent pour savoir que pour réparer la
+production de neige, vous allez devoir vérifier les <strong>cinquante
+étoiles</strong> avant le 25 décembre.</p>
+<p>Collectez les étoiles en résolvant les puzzles. Deux puzzles sont
+disponibles chaque jour du calendrier de l'avent, le deuxième puzzle
+étant débloqué quand vous terminez le premier. Chaque puzzle vous donne
+<strong>une étoile</strong>*. Bonne chance !</p>
+<p>Vous essayez de demander pourquoi ils n'utilisent pas tout simplement
+une <a href="https://adventofcode.com/2015/day/1">machine à météo</a>
+("pas assez puissante") et où ils vous envoient ("dans le ciel"), et
+puis pourquoi votre carte semble être majoritairement vide ("dis donc tu
+poses vraiment beaucoup de questions toi hein ?") et - et attendez
+est-ce que vous avez dit le CIEL ? ("Bien sûr, d'où penses-tu que viens
+la neige ?")</p>
+<p>Vous réalisez alors que les elfes vous ont déjà chargé dans un <a
+href="https://fr.wikipedia.org/wiki/Tr%C3%A9buchet">trébuchet</a>
+("bouge pas s'il te plaît, il faut qu'on t'attache correctement").</p>
+<p>Alors qu'ils terminent les ajustements finaux, vous découvrez que
+leur document de calibrage (l'entrée de votre puzzle) à été
+<em>amendé</em> par une très jeune elfe qui était visiblement très
+contente à l'idée de montrer ses talents artistiques. En conséquence,
+les elfes ont du mal à lire les valeurs du document.</p>
+<p>Le document nouvellement amélioré consiste en plusieurs lignes de
+texte, chaque ligne servait à l'origine à contenir des <em>valeurs de
+calibrage</em> spécifiques que les elfes doivent désormais retrouver.
+Sur chaque ligne, la valeur de calibrage peut être trouvée en combinant
+le <em>premier chiffre</em> et le <em>dernier chiffre</em> (dans cet
+ordre) pour former un seul <em>nombre à deux chiffres</em>.</p>
+<p>Par exemple :</p>
+<pre class="calibration-aoc"><code>1abc2
+pqr3stu8vwx
+a1b2c3d4e5f
+treb7uchet</code></pre>
+<p>Dans cet exemple, les valeurs de calibrage de chacune des quatre
+lignes sont <code>12</code>, <code>38</code>, <code>15</code> et
+<code>77</code>. Faire la somme ces valeurs donne
+<em><code>142</code></em>.</p>
+<p>Prenez en compte la totalité du document de calibrage. <em>Quelle est
+la somme de toutes ses valeurs de calibrage "?</em></p>
+</section> 
+<section id='translation_part_two'> 
+<h1 id="partie-deux----">--- Partie Deux ---</h1>
+<p>Vos calculs n'ont pas vraiment l'air corrects. On dirait bien que
+certains des chiffres sont en réalité <em>épelés en toutes lettres</em>
+: <code>one</code> (1), <code>two</code> (2), <code>three</code> (3),
+<code>four</code> (4), <code>five</code> (5), <code>six</code> (6),
+<code>seven</code> (7), <code>eight</code> (8) et <code>nine</code> (9)
+comptent <em>également</em> comme des "chiffres" valides</p>
+<p>Équipé de ces nouvelles informations, vous devez maintenant trouver
+les vrais premiers et derniers chiffres de chaque ligne. Par exemple
+:</p>
+<pre class="calibration-aoc-letters"><code>two1nine
+eightwothree
+abcone2threexyz
+xtwone3four
+4nineeightseven2
+zoneight234
+7pqrstsixteen</code></pre>
+<p>Dans cet exemple, les valeurs de calibrage sont <code>29</code>,
+<code>83</code>, <code>13</code>, <code>24</code>, <code>42</code>,
+<code>14</code> et <code>76</code>. Faire la somme de ces valeurs donne
+<em><code>281</code></em>.</p>
+<p><em>Quelle est la somme de toutes les valeurs de calibrage ?</em></p>
+</section> 
+</body> 
+</html> 
