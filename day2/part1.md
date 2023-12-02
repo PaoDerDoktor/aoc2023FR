@@ -8,7 +8,7 @@ Pendant que vous marchez, l'elfe vous montre un petit sac et des cubes qui sont 
 
 Pour obtenir des informations, une fois que le sac a été chargé en cubes, l'elfe ira chercher dans son sac un nombre aléatoires de cubes, vous les montrera, puis les remettra dans le sac. Il le fera quelques fois par partie.
 
-Vous jouez donc à quelques parties et enregistrez les informations de chacune d'elles (l'entrée de votre puzzle). Chaque partie est listée avec son numéro d'identification (par exemple, `11` dans "``Game 11:...``) suivie par une liste de sous-ensembles révélés depuis le sac, séparés par des point-virgules (par exemple `3 red, 5 green, 4 blue` pour un sous-ensemble).
+Vous jouez donc à quelques parties et enregistrez les informations de chacune d'elles (l'entrée de votre puzzle). Chaque partie est listée avec son numéro d'identification (par exemple, `11` dans ``Game 11:...``) suivie par une liste de sous-ensembles révélés depuis le sac, séparés par des point-virgules (par exemple `3 red, 5 green, 4 blue` pour un sous-ensemble).
 
 L'enregistrement de quelques parties pourrait donc ressembler à ça :
 
