@@ -1,0 +1,101 @@
+<!DOCTYPE html> 
+<html lang='fr'> 
+<head> 
+<meta charset='UTF-8'> 
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet"> 
+<link rel='stylesheet' type='text/css' href='../style/aocLike.css'> 
+<meta name='day' content="day3"> 
+</head> 
+<body> 
+<section id='translation_part_one'> 
+<h1 id="jour-03-rapports-de-transmission----">--- Jour 03 : Rapports de
+Transmission ---</h1>
+<p>L'elfe et vous arrivez finalement à une station de <a
+href="https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9cabine">télécabines</a>.
+Il vous dit que les télécabines vous emmèneront à la <em>source
+d'eau</em>, mais que lui ne vous accompagnera pas plus loin. Vous
+entrez.</p>
+<p>Vous trouvez très vite les télécabines, mais il y a un petit souci :
+elles ne bougent pas.</p>
+<p>"Aaah !"</p>
+<p>Vous vous retournez et vous vous retrouvez nez-à-nez avec une elfe
+couverte d'huile de moteur avec une clé à molette et un air surpris.
+"Désolée, je n'attendais personne ! Les télécabines ne fonctionnent pas
+pour le moment, et j'en ai pour un bout de temps pour les réparer",
+dit-elle. Vous proposez votre aide.</p>
+<p>L'ingénieure vous explique que l'une des pièces du moteur semble
+manquer, mais personne n'arrive à savoir laquelle. Si vous arrivez à
+<em>additionner tous les numéros de série des pièces</em> sur le schéma
+du moteur, vous devriez pouvoir facilement deviner quelle pièce
+manque.</p>
+<p>Le schéma du moteur (l'entrée de votre puzzle) consiste en une
+représentation visuelle de celui-ci. On y voit beaucoup de nombres et de
+symboles que vous ne comprenez pas vraiment, mais apparemment,
+<em>n'importe quel nombre adjacent à un symbole</em>, même
+diagonalement, est un "numéro de série" et devrait être inclut dans
+votre somme.</p>
+<p>Voici un exemple de schéma de moteur :</p>
+<pre class="aoc-gear-schematic"><code>467..114..
+...*......
+..35..633.
+......#...
+617*......
+.....+.58.
+..592.....
+......755.
+...$.*....
+.664.598..</code></pre>
+<p>Dans ce schéma, deux nombres ne <em>sont pas</em> des numéros de
+série puisqu'ils ne sont pas adjacents à un symbole : <code>114</code>
+(en haut à droite) et <code>58</code> (au milieu à droite). Tous les
+autres nombres sont adjacents à un symbole, et <em>sont</em> donc des
+numéros de série. Leur somme vaut <em><code>4361</code></em>.</p>
+<p>Bien sûr, le véritable schéma du moteur est bien plus grand.
+<em>Quelle est la somme de tous les numéros de série sur le schéma du
+moteur ?</em></p>
+</section> 
+<section id='translation_part_two'> 
+<h1 id="partie-deux----">--- Partie Deux ---</h1>
+<p>L'ingénieure trouve la pièce manquante et l'installe dans le moteur !
+Alors que le moteur prends vie, vous sautez dans la télécabine la plus
+proche, enfin prêt à monter vers la source d'eau.</p>
+<p>Par contre, vous n'avez pas l'air d'aller très vite. Peut-être qu'il
+y a encore un souci ? Heureusement, la cabine comporte un téléphone
+marqué "aide". Vous le prenez et l'ingénieure vous répond.</p>
+<p>Avant que vous ne pouviez expliquer la situation, elle suggère que
+vous regardiez par la fenêtre. Vous y voyez l'ingénieure, tenant un
+téléphone d'une main et vous faisant "coucou" de l'autre. Vous allez si
+lentement que vous n'avez même pas quitté la station. Vous sortez de la
+cabine.</p>
+<p>La pièce manquante n'était en fait pas le seul problème : un des
+engrenages installés dans le moteur n'est pas le bon. Un
+<em>engrenage</em> est un symbole <code>*</code> adjacent à
+<em>exactement deux nombres</em>. Son <em>rapport de transmission</em>
+est le résultat de la multiplication de ces deux nombres entre eux.</p>
+<p>Cette fois, vous devez trouvez le rapport de transmission de chaque
+engrenage et tous les additionner, de sorte à ce que l'ingénieure trouve
+l'engrenage à remplacer.</p>
+<p>Considérez à nouveau le schéma d'exemple :</p>
+<pre class="aoc-gear-schematic"><code>467..114..
+...*......
+..35..633.
+......#...
+617*......
+.....+.58.
+..592.....
+......755.
+...$.*....
+.664.598..</code></pre>
+<p>Sur ce schéma, on trouve <em>deux</em> engrenages. Le premier est en
+haut à gauche, il a les numéros de série <code>467</code> et
+<code>35</code>, son rapport de transmission est donc
+<code>16345</code>. Le second engrenage est en bas à droite, son rapport
+de transmission est de <code>451490</code> (le <code>*</code> adjacent à
+<code>617</code> <em>n'est pas</em> un engrenage puisqu'il n'est
+adjacent qu'à un seul numéro de série). Additionner tous ces rapports de
+transmission donne <em><code>467835</code></em>.</p>
+<p><em>Quelle est la somme de tous les rapports de transmission dans
+votre schéma de moteur ?</em></p>
+</section> 
+</body> 
+</html> 
