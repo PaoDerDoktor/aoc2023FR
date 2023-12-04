@@ -1,0 +1,148 @@
+<!DOCTYPE html> 
+<html lang='fr'> 
+<head> 
+<meta charset='UTF-8'> 
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet"> 
+<link rel='stylesheet' type='text/css' href='../style/aocLike.css'> 
+<meta name='day' content="day4"> 
+</head> 
+<body> 
+<section id='translation_part_one'> 
+<h1 id="jour-4-tickets-à-gratter----">--- Jour 4 : Tickets à gratter
+---</h1>
+<p>La télécabine vous fait monter. Mais étrangement, le sol ne semble
+pas monter avec vous : vous n'escaladez pas une montagne. Alors que le
+cercle de l'Île Neige disparaît de votre champs de vision, une toute
+nouvelle masse de terre apparaît soudainement devant vous ! La cabine
+vous amène sur la surface d'une toute nouvelle île, et s'engouffre dans
+sa station.</p>
+<p>Quand vous sortez de la cabine, la première chose que vous remarquez
+est que l'air est bien plus <em>chaud</em> que sur l'Île Neige. Il est
+aussi plutôt <em>humide</em>. Est-ce que vous êtes à l'endroit de la
+source d'eau ?</p>
+<p>Ensuite, vous remarquez qu'un elfe est assis sur le sol à l'autre
+bout de la station, dans ce qui semble être une pile de tickets carrés
+en papier coloré.</p>
+<p>"Oh ! Bonjour !", vous dit-il. L'elfe court vers vous, visiblement
+content d'avoir de la visite. "Comment puis-je vous aider ? - Oh, vous
+voulez en savoir plus sur la source d'eau ?"</p>
+<p>"Je sais pas trop, je ne fais que faire fonctionner cette station de
+télécabines. Mais ça sonne comme quelque chose qu'on devrait avoir, par
+contre. Nous sommes sur l'Île Île, après tout ! Je suis sûr que le
+<em>jardinier</em> saurait vous aider. Mais il est sur une autre île -
+enfin euh, les petites îles, celles entourées d'eau, pas les flottantes.
+Il faut vraiment qu'on trouve un meilleur système de nommage. Enfin
+bref, j'vais vous dire : si vous pouvez m'aider sur un problème vite
+zef, je vous laisse <em>emprunter mon bateau</em> et vous pouvez aller
+directement voir avec le jardinier. J'ai reçu une tonne de <a
+href="https://fr.wikipedia.org/wiki/Jeu_de_grattage">tickets à
+gratter</a> en cadeau, mais je n'arrive pas à savoir ce que j'ai
+gagné."</p>
+<p>L'elfe vous emmène vers la pile de tickets colorés. Là-bas, vous
+découvrez des dizaines de tickets à gratter, tous ayant leur cache
+opaque déjà retirés. En en prenant une, vous remarquez que chaque ticket
+possède deux listes de nombres, séparées par une barre verticale
+(<code>|</code>) : une liste de <em>numéros gagnants</em> puis une liste
+de <em>numéros choisis</em>. Vous organisez les informations dans une
+liste (l'entrée de votre puzzle).</p>
+<p>De ce qu'à compris l'elfe, vous devez trouver quels <em>numéros
+choisis</em> apparaissent dans la liste de <em>numéros gagnants</em>
+correspondante. Chaque numéro gagnant choisi donne <em>un point</em>, et
+numéro gagnant choisi supplémentaire <em>double</em> la valeur en points
+du ticket.</p>
+<p>Par exemple</p>
+<pre class="aoc-scratchcards"><code>Card 1: 41 48 83 86 17 | 83 86  6 31 17  9 48 53
+Card 2: 13 32 20 16 61 | 61 30 68 82 17 32 24 19
+Card 3:  1 21 53 59 44 | 69 82 63 72 16 21 14  1
+Card 4: 41 92 73 84 69 | 59 84 76 51 58  5 54 83
+Card 5: 87 83 26 28 32 | 88 30 70 12 93 22 82 36
+Card 6: 31 18 13 56 72 | 74 77 10 23 35 67 36 11</code></pre>
+<p>Dans l'exemple ci-dessus, le ticket 1 possède cinq numéros gagnants
+(<code>41</code>, <code>48</code>, <code>83</code>, <code>86</code> et
+<code>17</code>) et huit numéros choisis (<code>83</code>,
+<code>86</code>, <code>6</code>, <code>31</code>, <code>17</code>,
+<code>9</code>, <code>48</code>, <code>53</code>). De tous les numéros
+choisis, quatre (<code>48</code>, <code>83</code>, <code>17</code> et
+<code>86</code>) sont des numéros gagnants ! Ce qui signifie que le
+ticket 1 vaut <em><code>8</code></em> points (1 pour le premier numéro,
+puis doublé pour chacun des trois numéros après le premier).</p>
+<ul>
+<li>Le ticket 2 comporte deux numéros gagnants (<code>32</code> et
+<code>61</code>) et vaut donc <em><code>2</code></em> points.</li>
+<li>Le ticket 3 comporte deux numéros gagnants (<code>1</code> et
+<code>21</code>) et vaut donc <em><code>2</code></em> points.</li>
+<li>Le ticket 4 comporte un numéro gagnant (<code>84</code>) et vaut
+donc <em><code>1</code></em> points.</li>
+<li>Le ticket 5 ne comporte pas de numéro gagnant et ne vaut donc aucun
+point.</li>
+<li>Le ticket 6 ne comporte pas de numéro gagnant et ne vaut donc aucun
+point.</li>
+</ul>
+<p>Dans cet exemple, la pile de tickets à gratter de l'elfe vaut
+<em><code>13</code></em> points.</p>
+<p>Lancez-vous dans la grande pile de tickets colorés. <em>Combien de
+points vaut-elle au total ?</em></p>
+</section> 
+<section id='translation_part_two'> 
+<h1 id="partie-deux----">--- Partie Deux ---</h1>
+<p>Au moment où vous alliez donner votre résultat à l'elfe, l'un d'entre
+vous comprends que les règles étaient en réalité imprimées au dos de
+chaque ticket pendant tout ce temps.</p>
+<p>Il n'existe pas de système de "points". À la place, chaque ticket à
+gratter vous <em>fait d'autres tickets à gratter</em>, autant que vous
+avez choisi de numéros gagnants.</p>
+<p>Pour être exact, vous gagnez des <em>copies</em> des tickets à
+gratter en-dessous du ticket que vous étudiez, autant que de numéros
+gagnants choisis. Ainsi, si le ticket 10 avait 5 numéros gagnants
+choisis, vous gagneriez une copie de chacun des 5 tickets en-dessous
+dans la liste : 11, 12, 13, 14 et 15.</p>
+<p>Les copies des tickets sont évalués comme des tickets à gratter
+normaux et ont les <em>mêmes numéros et identifiant</em> que celui
+qu'ils copient. En conséquence, si vous gagniez une copie du ticket 10,
+ticket 10 qui vous donnait comme plus tôt 5 nombres gagnants choisis, la
+copie gagnerait elle aussi une copie de chacun des tickets que gagne
+l'original : 11, 12, 13, 14 et 15. Ce procédé se répète jusqu'à ce
+qu'aucune des copies ne vous fasse plus gagner de ticket (les tickets ne
+vous feront jamais gagner des tickets au-delà de la liste).</p>
+<p>Cette fois, l'exemple d'au-dessus donne un résultat différent :</p>
+<pre class="aoc-scratchcards"><code>Card 1: 41 48 83 86 17 | 83 86  6 31 17  9 48 53
+Card 2: 13 32 20 16 61 | 61 30 68 82 17 32 24 19
+Card 3:  1 21 53 59 44 | 69 82 63 72 16 21 14  1
+Card 4: 41 92 73 84 69 | 59 84 76 51 58  5 54 83
+Card 5: 87 83 26 28 32 | 88 30 70 12 93 22 82 36
+Card 6: 31 18 13 56 72 | 74 77 10 23 35 67 36 11</code></pre>
+<ul>
+<li>Le ticket 1 présente quatre numéros gagnants choisis, vous gagnez
+donc une copie de chacune des quatre tickets suivants : les tickets 2,
+3, 4 et 5.</li>
+<li>Le ticket 2 original a deux numéros gagnants choisis, vous copiez
+donc les tickets 3 et 4.</li>
+<li>Votre copie du ticket 2 gagne elle aussi une copie de chacun des
+tickets 3 et 4.</li>
+<li>Vos quatre instances du ticket 3 (l'originale et ses trois copies)
+ont deux numéros gagnants choisis, vous gagnez donc <em>quatre</em>
+copies des tickets 4 et 5.</li>
+<li>Vos huit instances du ticket 4 (l'original et ses sept copies) ont
+un numéro gagnant choisi, vous gagnez donc <em>huit</em> copies du
+ticket 5.</li>
+<li>Vous quatorze instances du ticket 5 (l'original et ses treize
+copies) n'ont pas de numéros gagnants choisis, et vous ne gagnez donc
+aucun autre ticket.</li>
+<li>Votre instance du ticket 6 (l'originale, qui n'a pas été copiée) n'a
+pas de numéros gagnants choisis, et vous ne gagnez donc aucun autre
+ticket.</li>
+</ul>
+<p>Une fois que tous les tickets originaux et toutes les copies aient
+été évalués, vous finissez avec <em><code>1</code></em> instance du
+ticket 1, <em><code>2</code></em> instances du ticket 2,
+<em><code>4</code></em> instances du ticket 3, <em><code>8</code></em>
+instances du ticket 4, <em><code>14</code></em> instances du ticket 5 et
+<em><code>1</code></em> instance du ticket 6. Au total, cette exemple de
+pile de tickets à gratter vous fait avoir <em><code>30</code></em>
+tickets !</p>
+<p>Évaluez tous les tickets à gratter originaux et copiés jusqu'à ce
+qu'aucun autre ticket ne soit gagnable. En incluant les originaux,
+<em>avec combien de tickets à gratter finissez-vous ?</em></p>
+</section> 
+</body> 
+</html> 
